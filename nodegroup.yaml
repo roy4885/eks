@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: dev-cluster
+  region: ap-northeast-2
+
+nodeGroups:
+  - name: ng-1-workers
+    instanceType: t2.medidum
+    desiredCapacity: 1
